@@ -1,0 +1,5 @@
+.contact {
+    gap: 20px;
+    display: grid;
+    grid-auto-flow: row;
+}

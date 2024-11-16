@@ -1,0 +1,30 @@
+footer {
+    width: var(--width);
+    margin: auto auto 0 auto;
+    padding: 25px 0;
+    border-top: 1px solid var(--surface-10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    gap: 5px;
+    display: flex;
+}
+
+.footer-link {
+    width: 41px;
+    height: 41px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    background: none;
+    border: none;
+    color: var(--text-0);
+}
+
+.footer-link:hover {
+    background-color: var(--surface-20);
+    text-decoration: none;
+}
