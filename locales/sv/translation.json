@@ -1,0 +1,63 @@
+{
+    "language": "Svenska",
+    "header": {
+        "navigation": {
+            "about": "Om mig",
+            "experience": "Erfarenhet",
+            "timeline": "Tidslinje",
+            "projects": "Projekt",
+            "contact": "Kontakt"
+        }
+    },
+    "main": {
+        "about": {
+            "location": "Stockholm, Sverige",
+            "description": "Jag är en 18-årig full-stack webbutvecklare med 4 års erfarenhet. Jag skapar professionella webbplatser."
+        },
+        "experience": {
+            "title": "Vad jag arbetar med"
+        },
+        "timeline": {
+            "title": "Tidslinje",
+            "field": "Informations och nätverksteknik",
+            "webServerProgramming": "Webbserverprogrammering",
+            "webDevelopment": "Webbutveckling",
+            "programming1": "Programmering 1",
+            "programming2": "Programmering 2",
+            "appDevelopment": "Apputveckling",
+            "computerAndNetworkTechnology": "Dator- och nätverksteknik"
+        },
+        "projects": {
+            "title": "Projekt",
+            "description": "Här är några av mina projekt",
+            "90gqopen": {
+                "description": "En webbplats för Minecraft-servern 90gQopen",
+                "button": "Besök webbplats"
+            },
+            "ragnarok": {
+                "description": "En webbplats för Minecraft SMP:n Ragnarök",
+                "button": "Besök webbplats"
+            },
+            "humanPerformanceTester": {
+                "description": "En webbplats som mäter prestanda i olika tester.",
+                "button": "Besök webbplats"
+            },
+            "magnetism": {
+                "description": "Ett 2D-minispel skapat i Vanilla Minecraft",
+                "button": "Besök på GitHub"
+            },
+            "othello": {
+                "description": "Ett Othello-spel med AI och anpassningsbart rutnät",
+                "button": "Besök på GitHub"
+            },
+            "quiz": {
+                "description": "Ett multiplayer-quizspel",
+                "button": "Besök på GitHub"
+            }
+            
+        },
+        "contact": {
+            "title": "Låt oss samarbeta"
+        }
+    }
+}
