@@ -1,36 +1,36 @@
-.portfolio {
+.projects {
     gap: 50px;
     display: grid;
     grid-auto-flow: row;
 }
 
-.portfolio-title {
-    gap: 30px;
+.projects-hero {
+    gap: 10px;
     display: grid;
     grid-auto-flow: row;
 }
 
-.portfolio-grid {
+.projects-grid {
     gap: 20px;
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.portfolio-cell {
+.projects-cell {
     border-radius: 5px;
     position: relative;
     overflow: hidden;
 }
 
-.portfolio-cell:hover .portfolio-image {
+.projects-cell:hover .projects-image {
     transform: scale(1.05);
 }
 
-.portfolio-content {
+.projects-content {
     padding: 15px;
     left: 0;
     bottom: 0;
-    gap: 15px;
+    gap: 10px;
     z-index: 1;
     transition: 250ms;
     position: absolute;
@@ -38,40 +38,44 @@
     flex-direction: column;
 }
 
-.portfolio-image {
+.projects-image {
     filter: brightness(0.2);
     transition: 250ms;
 }
 
-.portfolio-description {
-    color: var(--text-50);
+.projects-title {
+    color: var(--gray-0);
 }
 
-.portfolio-button {
+.projects-description {
+    color: var(--gray-20);
+}
+
+.projects-button {
     width: fit-content;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 16px;
-    color: var(--text-0);
+    color: var(--gray-0);
     background-color: var(--primary-0);
 }
 
-.portfolio-button:hover {
+.projects-button:hover {
     text-decoration: none;
     background-color: var(--primary-10);
 }
 
 @media (min-width: 768px) {
 
-    .portfolio-grid {
+    .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .portfolio-content {
+    .projects-content {
         bottom: -43px;
     }
 
-    .portfolio-cell:hover .portfolio-content {
+    .projects-cell:hover .projects-content {
         bottom: 0;
     }
 }

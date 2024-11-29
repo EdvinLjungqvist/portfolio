@@ -1,0 +1,62 @@
+{
+    "language": "English",
+    "header": {
+        "navigation": {
+            "about": "About",
+            "experience": "Experience",
+            "timeline": "Timeline",
+            "projects": "Projects",
+            "contact": "Contact"
+        }
+    },
+    "main": {
+        "about": {
+            "location": "Stockholm, Sweden",
+            "description": "I am an 18-year-old full-stack web developer with 4 years of experience. I create professional websites."
+        },
+        "experience": {
+            "title": "What I work with"
+        },
+        "timeline": {
+            "title": "Timeline",
+            "field": "Information and media technology",
+            "webServerProgramming": "Web server programming",
+            "webDevelopment": "Web development",
+            "programming1": "Programming 1",
+            "programming2": "Programming 2",
+            "appDevelopment": "App development",
+            "computerAndNetworkTechnology": "Computer and network technology"
+        },
+        "projects": {
+            "title": "Projects",
+            "description": "Here are some of my projects",
+            "90gqopen": {
+                "description": "A website for the Minecraft server 90gQopen",
+                "button": "Visit website"
+            },
+            "ragnarok": {
+                "description": "A website for the Minecraft SMP Ragnarök",
+                "button": "Visit website"
+            },
+            "humanPerformanceTester": {
+                "description": "A website that measures performance in various tests.",
+                "button": "Visit website"
+            },
+            "magnetism": {
+                "description": "A 2D minigame created in Vanilla Minecraft",
+                "button": "Visit on GitHub"
+            },
+            "othello": {
+                "description": "An Othello game with AI and customizable grid",
+                "button": "Visit on GitHub"
+            },
+            "quiz": {
+                "description": "A multiplayer quiz game",
+                "button": "Visit on GitHub"
+            }
+        },
+        "contact": {
+            "title": "Let's collaborate"
+        }
+    }
+}

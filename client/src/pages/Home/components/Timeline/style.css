@@ -1,0 +1,102 @@
+.timeline {
+    margin: 0 auto;
+    width: var(--width);
+    gap: 30px;
+    display: grid;
+}
+
+.timeline-grid {
+    gap: 10px;
+    display: grid;
+    position: relative;
+}
+
+.timeline-line {
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    display: none;
+    position: absolute;
+    background-color: var(--primary-0);
+    transform: translateX(-50%);
+}
+
+.timeline-cell {
+    max-width: 500px;
+    padding: 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.timeline-period {
+    color: var(--text-50);
+}
+
+@media (min-width: 768px) {
+
+    .timeline-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline-cell {
+        width: fit-content;
+        padding: 15px;
+    }
+
+    .timeline-line {
+        display: block;
+    }
+
+    .timeline-cell:nth-child(odd) {
+        margin-left: 10px;
+        justify-self: start;
+    }
+    
+    .timeline-cell:nth-child(even) {
+        margin-right: 10px;
+        justify-self: end;
+    }
+
+    .timeline-cell {
+        border: 1px solid var(--surface-10);
+    }
+
+    .timeline-cell:nth-child(odd) {
+        border-radius: 0px 15px 15px 15px;
+    }
+
+    .timeline-cell:nth-child(even) {
+        border-radius: 15px 0px 15px 15px;
+    }
+
+    .timeline-circle-wrapper:nth-child(odd) .timeline-circle {
+        left: -13px;
+    }
+
+    .timeline-circle-wrapper:nth-child(even) .timeline-circle {
+        right: -13px;
+    }
+
+    .timeline-circle-wrapper {
+        position: relative;
+    }
+    
+    .timeline-circle {
+        top: 0;
+        position: absolute;
+    }
+    
+    .timeline-circle:nth-child(odd) {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: var(--primary-0);
+    }
+    
+    .timeline-circle:nth-child(even) {
+        border-radius: 15px 0px 15px 15px;
+    }
+}

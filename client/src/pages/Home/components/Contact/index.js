@@ -1,34 +1,37 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import RevealUp from "../../../../components/RevealUp";
 import "./style.css";
-import Reveal from "../../../../components/Reveal";
 
 const Contact = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="contact" className="contact small">
-            <Reveal>
+            <RevealUp>
                 <h2>
-                    Contact me
+                    {t("main.contact.title")}
                 </h2>
-            </Reveal>
-            <Reveal>
+            </RevealUp>
+            <RevealUp>
                 <ul>
                     <li>
-                        <Link>
-                            <i className="fa-brands fa-github" /> GitHub
+                        <Link to="https://github.com/EdvinLjungqvist" target="_blank">
+                            GitHub
                         </Link>
                     </li>
                     <li>
-                        <Link>
-                            <i className="fa-brands fa-instagram" /> Instagram
+                        <Link to="https://www.instagram.com/edvin.ljungqvist" target="_blank">
+                            Instagram
                         </Link>
                     </li>
                     <li>
-                        <Link>
-                            <i className="fa-brands fa-linkedin" /> LinkedIn
+                        <Link to="www.linkedin.com/in/edvin-ljungqvist-02603630b" target="_blank">
+                            LinkedIn
                         </Link>
                     </li>
                 </ul>
-            </Reveal>
+            </RevealUp>
         </section>
     );
 };

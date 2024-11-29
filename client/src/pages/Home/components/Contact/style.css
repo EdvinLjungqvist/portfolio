@@ -1,5 +1,5 @@
 .contact {
-    gap: 20px;
+    gap: 10px;
     display: grid;
     grid-auto-flow: row;
 }

@@ -1,29 +1,50 @@
 :root {
-    --primary-0: #e9371b;
-    --primary-10: #f05534;
-    --primary-20: #f66d4c;
-    --primary-30: #fb8464;
-    --primary-40: #ff997c;
-    --primary-50: #ffae95;
-    --secondary-0: #261814;
-    --secondary-10: #3b2d29;
-    --secondary-20: #514440;
-    --secondary-30: #685c58;
-    --secondary-40: #7f7572;
-    --secondary-50: #978f8c;
+    --primary-0: #0080ff;
+    --primary-10: #4a8dff;
+    --primary-20: #6b9aff;
+    --primary-30: #85a8ff;
+    --primary-40: #9cb6ff;
+    --primary-50: #b2c4ff;
+    --secondary-0: #1a1426;
+    --secondary-10: #2f293b;
+    --secondary-20: #464050;
+    --secondary-30: #5e5867;
+    --secondary-40: #77727e;
+    --secondary-50: #908c97;
     --surface-0: #121212;
     --surface-10: #282828;
     --surface-20: #3f3f3f;
     --surface-30: #575757;
     --surface-40: #717171;
     --surface-50: #8b8b8b;
-    --text-0: #ffffff;
-    --text-10: #e6e6e6;
-    --text-20: #cccccc;
-    --text-30: #b3b3b3;
-    --text-40: #999999;
-    --text-50: #808080;
+    --gray-0: #ffffff;
+    --gray-10: #e6e6e6;
+    --gray-20: #cccccc;
+    --gray-30: #b3b3b3;
+    --gray-40: #999999;
+    --gray-50: #808080;
+    --text-0: var(--gray-0);
+    --text-10: var(--gray-10);
+    --text-20: var(--gray-20);
+    --text-30: var(--gray-30);
+    --text-40: var(--gray-40);
+    --text-50: var(--gray-50);
     --width: calc(100% - 30px);
+}
+
+[lightTheme] {
+    --surface-0: #ffffff;
+    --surface-10: #e6e6e6;
+    --surface-20: #cccccc;
+    --surface-30: #b3b3b3;
+    --surface-40: #999999;
+    --surface-50: #808080;
+    --text-0: #282828;
+    --text-10: #3f3f3f;
+    --text-20: #575757;
+    --text-30: #717171;
+    --text-40: #8b8b8b;
+    --text-50: #999999;
 }
 
 * {
@@ -82,7 +103,7 @@ h5 {
 
 p,
 li {
-    color: var(--text-10);
+    color: var(--text-20);
 }
 
 p,
@@ -120,7 +141,16 @@ img {
 }
 
 button {
+    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
+    border: none;
+    color: var(--gray-0);
+    background-color: var(--primary-0);
+}
+
+button:hover {
+    background-color: var(--primary-10);
 }
 
 

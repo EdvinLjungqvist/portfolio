@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import image from "../../../../assets/images/me.png"
-import Reveal from "../../../../components/Reveal";
+import RevealUp from "../../../../components/RevealUp";
 import "./style.css";
 
 const About = () => {
+    const { t } = useTranslation();
+
     return (
-        <Reveal>
+        <RevealUp>
             <section id="about" className="about small top">
                 <img src={image} className="about-image" />
                 <div className="about-content">
@@ -12,14 +16,25 @@ const About = () => {
                         Edvin Ljungqvist
                     </h2>
                     <p className="about-location">
-                        <i className="fa-solid fa-location-dot" /> Stockholm, Sweden
+                        <i className="fa-solid fa-location-dot" /> {t("main.about.location")}
                     </p>
                     <p>
-                        I'm an 18-year-old full-stack web developer with 5 years of programming experience.
+                        {t("main.about.description")}
                     </p>
+                    <div className="about-links">
+                        <Link to="https://github.com/EdvinLjungqvist" target="_blank" className="about-link">
+                            <i className="fa-brands fa-github" />
+                        </Link>
+                        <Link to="https://www.instagram.com/edvin.ljungqvist" target="_blank" className="about-link">
+                            <i className="fa-brands fa-instagram" />
+                        </Link>
+                        <Link to="www.linkedin.com/in/edvin-ljungqvist-02603630b" target="_blank" className="about-link">
+                            <i className="fa-brands fa-linkedin" />
+                        </Link>
+                    </div>
                 </div>
             </section>
-        </Reveal>
+        </RevealUp>
     );
 };
 

@@ -1,56 +1,59 @@
-import Reveal from "../../../../components/Reveal";
+import { useTranslation } from "react-i18next";
+import RevealUp from "../../../../components/RevealUp";
 import "./style.css";
 
-const Competencies = () => {
+const Experience = () => {
+    const { t } = useTranslation();
+
     return (
         <>
-            <section id="competencies" className="competencies full">
-                <Reveal>
+            <section id="experience" className="experience full">
+                <RevealUp>
                     <h2>
-                        What I work with
+                        {t("main.experience.title")}
                     </h2>
-                </Reveal>
-                <div className="competencies-grid">
-                    <Reveal className="competencies-cell">
+                </RevealUp>
+                <div className="experience-grid">
+                    <RevealUp className="experience-cell">
                         <h3>
                             <i className="fa-brands fa-js" /> JavaScript
                         </h3>
                         <ul>
-                            <li className="competencies-item">
+                            <li className="experience-item">
                                 React
                             </li>
-                            <li className="competencies-item">
+                            <li className="experience-item">
                                 Node.js
                             </li>
-                            <li className="competencies-item">
+                            <li className="experience-item">
                                 Express.js
                             </li>
                         </ul>
-                    </Reveal>
-                    <Reveal className="competencies-cell">
+                    </RevealUp>
+                    <RevealUp className="experience-cell">
                         <h3>
                             <i className="fa-brands fa-python" /> Python
                         </h3>
                         <ul>
-                            <li className="competencies-item">
+                            <li className="experience-item">
                                 Flask
                             </li>
                         </ul>
-                    </Reveal>
-                    <Reveal className="competencies-cell">
+                    </RevealUp>
+                    <RevealUp className="experience-cell">
                         <h3>
                             <i className="fa-solid fa-database" /> SQL
                         </h3>
                         <ul>
-                            <li className="competencies-item">
+                            <li className="experience-item">
                                 MySQL
                             </li>
-                            <li className="competencies-item">
+                            <li className="experience-item">
                                 SQLite
                             </li>
                         </ul>
-                    </Reveal>
-                    <Reveal className="competencies-cell">
+                    </RevealUp>
+                    <RevealUp className="experience-cell">
                         <h3>
                             <i className="fa-brands fa-java" /> Java
                         </h3>
@@ -59,26 +62,26 @@ const Competencies = () => {
                                 PaperMC
                             </li>
                         </ul>
-                    </Reveal>
-                    <Reveal className="competencies-cell">
+                    </RevealUp>
+                    <RevealUp className="experience-cell">
                         <h3>
                             <i className="fa-brands fa-android" /> Kotlin
                         </h3>
                         <ul>
-                            <li className="competencies-item">
+                            <li className="experience-item">
                                 Jetpack Compose
                             </li>
                         </ul>
-                    </Reveal>
-                    <Reveal className="competencies-cell">
+                    </RevealUp>
+                    <RevealUp className="experience-cell">
                         <h3>
                             <i className="fa-brands fa-github" /> GitHub
                         </h3>
-                    </Reveal>
+                    </RevealUp>
                 </div>
             </section>
         </>
     );
 };
 
-export default Competencies;
+export default Experience;

@@ -1,7 +1,8 @@
 import About from "./components/About";
-import Competencies from "./components/Competencies";
-import Portfolio from "./components/Portfolio";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Timeline from "./components/Timeline";
 import { Helmet } from "react-helmet-async";
 import "./style.css";
 
@@ -10,12 +11,13 @@ const Home = () => {
         <>
             <Helmet>
                 <title>
-                    Edvin Ljungqvst
+                    Portfolio | Edvin Ljungqvist
                 </title>
             </Helmet>
             <About />
-            <Competencies />
-            <Portfolio />
+            <Experience />
+            <Timeline />
+            <Projects />
             <Contact />
         </>
     );
