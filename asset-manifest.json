@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7c395a1b.css",
-    "main.js": "/static/js/main.32bbd20d.js",
+    "main.css": "/static/css/main.c127c2b9.css",
+    "main.js": "/static/js/main.6abb3ec6.js",
     "static/media/90gqopen.png": "/static/media/90gqopen.0ba3f29680f3fffed8c3.png",
     "static/media/me.png": "/static/media/me.ce6eeae9db91f41cac77.png",
     "static/media/magnetism.png": "/static/media/magnetism.d9e1eeed5289cf0f7f9b.png",
@@ -10,11 +10,11 @@
     "static/media/quiz_game.png": "/static/media/quiz_game.ecd4e6a62ade883c2c43.png",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
-    "main.7c395a1b.css.map": "/static/css/main.7c395a1b.css.map",
-    "main.32bbd20d.js.map": "/static/js/main.32bbd20d.js.map"
+    "main.c127c2b9.css.map": "/static/css/main.c127c2b9.css.map",
+    "main.6abb3ec6.js.map": "/static/js/main.6abb3ec6.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c395a1b.css",
-    "static/js/main.32bbd20d.js"
+    "static/css/main.c127c2b9.css",
+    "static/js/main.6abb3ec6.js"
   ]
 }
